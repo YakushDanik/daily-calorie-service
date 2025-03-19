@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  database:
+    container_name: calorie-service-database
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: calorie-service-database
+    ports:
+      - "5433:5432"
